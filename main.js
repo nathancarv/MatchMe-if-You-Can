@@ -34,7 +34,7 @@ var memoryGame = new MemoryGame(cards);
   document.getElementById('memory_board').innerHTML += html;
   // Bind the click event of each element to a function
 $('.back').on('click', function () { 
-    let flippingNoise = new Audio("../audio/coin.mp3")
+    let flippingNoise = new Audio("./audio/coin.mp3")
     flippingNoise.play();
     if (!this.classList.contains('active')) {
       memoryGame.pickedCards.push(this);
